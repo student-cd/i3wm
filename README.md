@@ -1,2 +1,2 @@
-# ubuntu-i3wm
+# i3wm
 dots for linux at uni
