@@ -329,3 +329,9 @@ for_window [class="Eog"] move position center
 ## qiv ##
 for_window [title="^qiv*"] floating enable, move workspace current
 
+## Gnome-calculator ##
+for_window [class="Gnome-calculator"] floating enable
+for_window [class="Gnome-calculator"] resize set 678 678
+for_window [class="Gnome-calculator"] move absolute position mouse
+
+
