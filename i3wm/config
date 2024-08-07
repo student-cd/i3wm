@@ -289,19 +289,20 @@ workspace $ws10 output DP-2
 # use xprop and click window for details
 # e.g. output: WM_CLASS(STRING) = "irssi", "URxvt"
 # The first part of the WM_CLASS is the instance ("irssi" in this example), the second part is the class ("URxvt" in this example).
+# Use xwininfo and click window for position and WxH
 
 #### pdf ####
 assign [class="Zathura"] number 10
 for_window [class="Zathura"] move window to mark special_mark, mark special_mark, layout tabbed
-for_window [class="Zathura"] focus
+#for_window [class="Zathura"] focus
 
 assign [class="Evince"] number 10
 for_window [class="Evince"] move window to mark special_mark, mark special_mark, layout tabbed
-for_window [class="Evince"] focus
+#for_window [class="Evince"] focus
 
 assign [class="Master PDF Editor"] number 10
 for_window [class="Master PDF Editor"] move window to mark special_mark, mark special_mark, layout tabbed
-for_window [class="Master PDF Editor"] focus
+#for_window [class="Master PDF Editor"] focus
 
 ## excel ##
 assign [class="libreoffice-calc"] number 4
@@ -310,6 +311,11 @@ for_window [class="libreoffice-calc"] focus
 
 ## mpv ##
 for_window [class="mpv"] floating enable
+
+## ytmdesktop ##
+assign [class="YouTube Music Desktop App"] number 6 
+for_window [class="YouTube Music Desktop App"] floating enable
+for_window [class="YouTube Music Desktop App"] resize set 870 870 
 
 ## virtualbox ##
 assign [class="VirtualBox Manager"] number 8
@@ -327,7 +333,7 @@ for_window [class="Eog"] resize set 1000 1000
 for_window [class="Eog"] move position center
 
 ## qiv ##
-for_window [title="^qiv*"] floating enable, move workspace current
+for_window [title="qiv"] floating enable, move workspace current
 
 ## Gnome-calculator ##
 for_window [class="Gnome-calculator"] floating enable
